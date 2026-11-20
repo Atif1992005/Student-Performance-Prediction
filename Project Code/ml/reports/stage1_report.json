@@ -1,0 +1,99 @@
+{
+  "stage": 1,
+  "trained_model": false,
+  "data_quality": {
+    "passed": false,
+    "n_rows": 20000,
+    "n_columns": 6,
+    "columns": [
+      "CGPA",
+      "Attendance_Percent",
+      "Backlogs",
+      "Assignments_Percent",
+      "Average_Test_Score_Percent",
+      "Academic_Risk"
+    ],
+    "missing_columns": [],
+    "extra_columns": [],
+    "missing_counts": {
+      "CGPA": 14978,
+      "Attendance_Percent": 0,
+      "Backlogs": 0,
+      "Assignments_Percent": 0,
+      "Average_Test_Score_Percent": 0,
+      "Academic_Risk": 0
+    },
+    "duplicate_rows": 55,
+    "risk_counts": {
+      "High": 10508,
+      "Medium": 7704,
+      "Low": 1788
+    },
+    "unexpected_labels": [],
+    "ranges": {
+      "CGPA": {
+        "expected": [
+          0.0,
+          10.0
+        ],
+        "observed_min": 4.0,
+        "observed_max": 10.0,
+        "out_of_range_count": 0
+      },
+      "Attendance_Percent": {
+        "expected": [
+          0.0,
+          100.0
+        ],
+        "observed_min": 35.0,
+        "observed_max": 100.0,
+        "out_of_range_count": 0
+      },
+      "Backlogs": {
+        "expected": [
+          0,
+          20
+        ],
+        "observed_min": 0.0,
+        "observed_max": 6.0,
+        "out_of_range_count": 0
+      },
+      "Average_Test_Score_Percent": {
+        "expected": [
+          0.0,
+          100.0
+        ],
+        "observed_min": 12.5,
+        "observed_max": 99.9,
+        "out_of_range_count": 0
+      }
+    },
+    "issues": [
+      "Found 55 duplicate rows"
+    ]
+  },
+  "prepared_rows": 20000,
+  "prepared_columns": [
+    "Attendance_Percent",
+    "CGPA",
+    "Backlogs",
+    "Assignments_Percent",
+    "Average_Test_Score_Percent",
+    "Academic_Risk"
+  ],
+  "target_balance": {
+    "High": 10508,
+    "Medium": 7704,
+    "Low": 1788
+  },
+  "outputs": {
+    "processed_dataset": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\data\\processed\\features_and_target.csv",
+    "feature_summary": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\reports\\feature_summary.csv",
+    "figures": [
+      "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\reports\\figures\\01_risk_distribution.png",
+      "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\reports\\figures\\02_feature_histograms.png",
+      "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\reports\\figures\\03_features_by_risk.png",
+      "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\reports\\figures\\04_correlation_heatmap.png"
+    ]
+  }
+}

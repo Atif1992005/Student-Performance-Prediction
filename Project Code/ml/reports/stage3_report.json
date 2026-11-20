@@ -1,0 +1,13 @@
+{
+  "stage": 3,
+  "primary_model": "Logistic Regression",
+  "comparison_model": "Random Forest",
+  "selection_reason": "Logistic Regression had the best Stage 2 macro F1.",
+  "outputs": {
+    "models": {
+      "primary": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\models\\primary_logistic_regression.joblib",
+      "comparison": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\models\\comparison_random_forest.joblib"
+    },
+    "metadata": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\models\\serving_metadata.json"
+  }
+}

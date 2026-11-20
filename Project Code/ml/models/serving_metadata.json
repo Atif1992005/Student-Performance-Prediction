@@ -1,0 +1,44 @@
+{
+  "primary_model": "Logistic Regression",
+  "comparison_model": "Random Forest",
+  "features": [
+    "Attendance_Percent",
+    "CGPA",
+    "Backlogs",
+    "Assignments_Percent",
+    "Average_Test_Score_Percent"
+  ],
+  "feature_ranges": {
+    "CGPA": [
+      0.0,
+      10.0
+    ],
+    "Attendance_Percent": [
+      0.0,
+      100.0
+    ],
+    "Backlogs": [
+      0,
+      20
+    ],
+    "Average_Test_Score_Percent": [
+      0.0,
+      100.0
+    ]
+  },
+  "classes": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "preprocessing": {
+    "Logistic Regression": "sklearn Pipeline with OneHotEncoder on standardized categories (Low, Medium, High)",
+    "Random Forest": "sklearn Pipeline with OneHotEncoder on standardized categories (Low, Medium, High)"
+  },
+  "paths": {
+    "primary": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\models\\primary_logistic_regression.joblib",
+    "comparison": "C:\\Users\\atif1\\OneDrive\\Desktop\\stud_ml_proj\\ml\\models\\comparison_random_forest.joblib"
+  },
+  "stage": 3,
+  "selection_reason": "highest macro F1 on Stage 2 test set"
+}
